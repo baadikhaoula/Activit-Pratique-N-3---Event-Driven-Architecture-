@@ -11,13 +11,12 @@ import java.util.function.Supplier;
 
 @Component
 public class PageEventHandler {
-
     @Bean
-    public Consumer<PageEvent> pageEventConsumer() {
-        return (input) -> {
-            System.out.println("****************");
+    public Consumer<PageEvent> pageEventConsumer(){
+        return (input)->{
+            System.out.println("************");
             System.out.println(input.toString());
-            System.out.println("****************");
+            System.out.println("************");
         };
     }
     @Bean
